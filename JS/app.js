@@ -41,7 +41,6 @@ const seattle = {
     const ulEl = document.createElement('ul');
     articleEl.appendChild(ulEl);
     for(let i = 0; i < workingHours.length; i++){
-      seattle.randomCustomerNum(this.minCust , this.maxCust);
       const liEl = document.createElement('li');
       ulEl.appendChild(liEl);
       liEl.textContent = `${workingHours[i]}: ${this.amountOfCookiesPerHour[i]} Cookies`;
@@ -93,7 +92,6 @@ const tokyo = {
     const ulEl = document.createElement('ul');
     articleEl.appendChild(ulEl);
     for(let i = 0; i < workingHours.length; i++){
-      tokyo.randomCustomerNum(this.minCust , this.maxCust);
       const liEl = document.createElement('li');
       ulEl.appendChild(liEl);
       liEl.textContent = `${workingHours[i]}: ${this.amountOfCookiesPerHour[i]} Cookies`;
@@ -144,7 +142,6 @@ const dubai = {
     const ulEl = document.createElement('ul');
     articleEl.appendChild(ulEl);
     for(let i = 0; i < workingHours.length; i++){
-      tokyo.randomCustomerNum(this.minCust , this.maxCust);
       const liEl = document.createElement('li');
       ulEl.appendChild(liEl);
       liEl.textContent = `${workingHours[i]}: ${this.amountOfCookiesPerHour[i]} Cookies`;
@@ -195,7 +192,6 @@ const paris = {
     const ulEl = document.createElement('ul');
     articleEl.appendChild(ulEl);
     for(let i = 0; i < workingHours.length; i++){
-      tokyo.randomCustomerNum(this.minCust , this.maxCust);
       const liEl = document.createElement('li');
       ulEl.appendChild(liEl);
       liEl.textContent = `${workingHours[i]}: ${this.amountOfCookiesPerHour[i]} Cookies`;
@@ -246,7 +242,6 @@ const lima = {
     const ulEl = document.createElement('ul');
     articleEl.appendChild(ulEl);
     for(let i = 0; i < workingHours.length; i++){
-      tokyo.randomCustomerNum(this.minCust , this.maxCust);
       const liEl = document.createElement('li');
       ulEl.appendChild(liEl);
       liEl.textContent = `${workingHours[i]}: ${this.amountOfCookiesPerHour[i]} Cookies`;
