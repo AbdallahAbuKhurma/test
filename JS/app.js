@@ -41,7 +41,6 @@ const seattle = {
     const ulEl = document.createElement('ul');
     articleEl.appendChild(ulEl);
     for(let i = 0; i < workingHours.length; i++){
-      seattle.randomCustomerNum(this.minCust , this.maxCust);
       const liEl = document.createElement('li');
       ulEl.appendChild(liEl);
       liEl.textContent = `${workingHours[i]}: ${this.amountOfCookiesPerHour[i]} Cookies`;
@@ -93,7 +92,6 @@ const tokyo = {
     const ulEl = document.createElement('ul');
     articleEl.appendChild(ulEl);
     for(let i = 0; i < workingHours.length; i++){
-      tokyo.randomCustomerNum(this.minCust , this.maxCust);
       const liEl = document.createElement('li');
       ulEl.appendChild(liEl);
       liEl.textContent = `${workingHours[i]}: ${this.amountOfCookiesPerHour[i]} Cookies`;
@@ -144,7 +142,6 @@ const dubai = {
     const ulEl = document.createElement('ul');
     articleEl.appendChild(ulEl);
     for(let i = 0; i < workingHours.length; i++){
-      tokyo.randomCustomerNum(this.minCust , this.maxCust);
       const liEl = document.createElement('li');
       ulEl.appendChild(liEl);
       liEl.textContent = `${workingHours[i]}: ${this.amountOfCookiesPerHour[i]} Cookies`;
@@ -156,9 +153,9 @@ const dubai = {
   },
 };
 
-tokyo.randomCustomerNum();
-tokyo.calculateAmountOfCookiesPerHour();
-tokyo.render();
+dubai.randomCustomerNum();
+dubai.calculateAmountOfCookiesPerHour();
+dubai.render();
 
 const paris = {
   location: 'Paris',
@@ -195,7 +192,6 @@ const paris = {
     const ulEl = document.createElement('ul');
     articleEl.appendChild(ulEl);
     for(let i = 0; i < workingHours.length; i++){
-      tokyo.randomCustomerNum(this.minCust , this.maxCust);
       const liEl = document.createElement('li');
       ulEl.appendChild(liEl);
       liEl.textContent = `${workingHours[i]}: ${this.amountOfCookiesPerHour[i]} Cookies`;
@@ -207,9 +203,9 @@ const paris = {
   },
 };
 
-tokyo.randomCustomerNum();
-tokyo.calculateAmountOfCookiesPerHour();
-tokyo.render();
+paris.randomCustomerNum();
+paris.calculateAmountOfCookiesPerHour();
+paris.render();
 
 const lima = {
   location: 'Lima',
@@ -246,7 +242,6 @@ const lima = {
     const ulEl = document.createElement('ul');
     articleEl.appendChild(ulEl);
     for(let i = 0; i < workingHours.length; i++){
-      tokyo.randomCustomerNum(this.minCust , this.maxCust);
       const liEl = document.createElement('li');
       ulEl.appendChild(liEl);
       liEl.textContent = `${workingHours[i]}: ${this.amountOfCookiesPerHour[i]} Cookies`;
@@ -258,6 +253,6 @@ const lima = {
   },
 };
 
-tokyo.randomCustomerNum();
-tokyo.calculateAmountOfCookiesPerHour();
-tokyo.render();
+lima.randomCustomerNum();
+lima.calculateAmountOfCookiesPerHour();
+lima.render();
