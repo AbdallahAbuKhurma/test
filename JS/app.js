@@ -112,6 +112,7 @@ function tableFooter(){
   const container = document.getElementById('table');
   const dataRow = document.createElement('tr');
   container.appendChild(dataRow);
+  dataRow.setAttribute('id', 'trFooter')
   let tdEl = document.createElement('td');
   dataRow.appendChild(tdEl);
   tdEl.textContent = 'Total';
@@ -127,3 +128,28 @@ function tableFooter(){
   tdEl.textContent = claculateTotal();
 }
 tableFooter();
+
+let salmonForm = document.getElementById('salmonform');
+
+salmonForm.addEventListener('submit', addNewBranch);
+
+function addNewBranch(event){
+  event.preventDefault();
+  
+  let location = event.target.Location.value;
+  let minCustomers = Number(event.target.minCustomers.value);
+  let maxCustomers = Number(event.target.maxCustomers.value);
+  let avgSales = Number(event.target.avgSales.value);
+
+  let addBranch = new CookieStore(location, minCustomers, maxCustomers,avgSales);
+  addBranch.randomCustomersNum();
+  addBranch.calculatAmountOfCookiesPerHour();
+  addBranch.render();
+
+  let container = document.getElementById('table');
+  let lastRow  = document.getElementById('trFooter');
+
+  container.removeChild(lastRow);
+  tableFooter();
+  salmonForm.reset();
+}
