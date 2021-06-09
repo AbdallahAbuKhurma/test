@@ -153,3 +153,10 @@ function addNewBranch(event){
   tableFooter();
   salmonForm.reset();
 }
+// trying linux for the first time 
+
+const abdallah = {
+  name: 'abdallah',
+  age: '23 years old',
+}
+// hello
